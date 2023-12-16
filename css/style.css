@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300;1,600&family=Roboto+Condensed:wght@300&family=Shizuru&display=swap');
+
+
+* html,body{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+
+
+
+
+
+ /*//////////////////////     Menu           ////////////////*/
+
+#head_menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.container_nav{
+    padding-left: 10%;
+    position: fixed;
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-box-shadow: -2px 8px 15px 5px rgba(158, 158, 158, 0.42);-moz-box-shadow: -2px 8px 15px 5px rgba(158, 158, 158, 0.42);box-shadow: -2px 8px 15px 5px rgba(158, 158, 158, 0.42);
+    
+}
+.container_options{
+    padding: 0%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-evenly;
+}
+
+#container_icon_menu{
+    width: 0px;
+    overflow: hidden;
+}
+.container_options > li > img{
+    height:0px;
+    width: 0px;
+
+}
+
+
+
+
+
+ /*//////////////////////     Primera section           ////////////////*/
+.conteiner_intro{
+    background-color: #fff2ff;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    /*background-color:#ffe4ff;*/
+    display: flex;
+    align-items: center;
+
+}
+
+
+.conteiner_intro_img > img {
+
+    height: 60vh;
+}
+
+.container_text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information > h1{
+    font-size: 50px;
+}
+
+.information > p{
+    font-size: 25px;
+}
+.container_emprendedoras > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container_cards_person{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.cards_person{
+    width: 40%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards_person > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.cards_person > div > img {
+
+    border-radius: 50%;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+
+}
+#person_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+ /*//////////////////////     Seguda section           ////////////////*/
+
+.container_mision{
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+
+ /*//////////////////////     media queri mobile           ////////////////*/
+
+
+
+
+@media screen and (max-width:480px) {
+
+    html,body{
+        padding: 0%;
+        margin: 0%;
+    }
+
+ /*//////////////////////     Menu           ////////////////*/
+
+
+    .title_menu {
+        width: 0px;
+        height: 0px;
+        overflow:hidden;
+    }
+    .container_nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;  
+        margin: 0%;
+        padding-left: 2%;  
+    }
+
+    .container_options{
+        transform: translateY(-150%);
+        padding: 0px;
+        list-style: none;
+        margin: 0px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        width: 115vw;
+ 
+    }
+
+    .container_options > li > img{
+        height: 30vh;
+        width: 30vh;
+
+    }
+
+
+
+    
+    #container_icon_menu > li{
+        width: 20%;
+        height: 100%;
+
+    }
+
+    #container_icon_menu{
+
+        margin: 50px;
+        height: 50%;
+        width: 20%;
+        list-style: none;
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #icon_menu{
+        height: 50px;
+        width: 50px;
+
+    }
+    #container_icon_menu:active{
+        background-color: #bf738b;
+
+    }
+    /*///////////////// evento click icono menu////////////////*/
+
+
+    .container_options.click{
+        transform: translateY(0);
+    }
+
+
+
+
+
+
+
+
+    .conteiner_intro{
+        overflow: hidden;
+    }
+
+    
+    .conteiner_intro_img > img{
+        height: 0px;
+    }
+
+    .information {
+        width: 90vw;
+        padding: 5vh;
+    }    
+    .information > h1 {
+        font-size: 30px;
+    }
+    .information >  p {
+        font-size: 20px;
+        width: 90%;      
+    }
+
+    .container_emprendedoras{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_cards_person{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards_person{
+        width: 75%;
+        margin-top: 5%;
+    }
+}
