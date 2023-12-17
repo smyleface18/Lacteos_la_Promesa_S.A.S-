@@ -4,6 +4,7 @@
 * html,body{
     padding: 0%;
     margin: 0%;
+    overflow-x: hidden;
     
 }
 
@@ -18,12 +19,13 @@
     display: flex;
     align-items: center;
     height: 100%;
+    padding-left: 5%;
 }
 
 
 .container_nav{
-    padding-left: 10%;
     position: fixed;
+    z-index: 10;
     margin-top: 0%;
     padding-top: 0%;
     width: 100%;
@@ -60,19 +62,25 @@
 
  /*//////////////////////     Primera section           ////////////////*/
 .conteiner_intro{
-    background-color: #fff2ff;
+   /*background-color: #fff2ff;*/
+    
     padding-right: 5px;
     padding-bottom: 20px;
-    /*background-color:#ffe4ff;*/
+    background-color:#ebaf8688;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+
+    
 
 }
 
-
+.conteiner_intro_img{
+    display: flex;
+    align-items: center;
+}
 .conteiner_intro_img > img {
 
-    height: 60vh;
+    height: 30vw;
 }
 
 .container_text{
@@ -87,6 +95,7 @@
 }
 
 .information > p{
+    padding: 3%;
     font-size: 25px;
 }
 .container_emprendedoras > h1{
@@ -137,20 +146,252 @@
 
 }
 
+.ondas_1{
+    margin-top: -5px;
+    overflow: hidden;
+}
+.ondas_1 > img {
 
-
+    width: 100vw;
+    
+    
+}
 
 
 
 
 
  /*//////////////////////     Seguda section           ////////////////*/
-
-.container_mision{
+.container_lineamientos{
     width: 100%;
-    height: 600px;
-    
+    background-image: url("../img/wallpaper.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -22%;
 }
+
+ .container_m_v{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    padding-top: 20%;
+ }
+
+ .mision{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    width: 35%;
+    height: 35%;
+ }
+ .container_flecha{
+    width: 20vw;
+    overflow: hidden;
+ }
+
+ .container_flecha > img{
+    width: 100%
+ }
+
+ .mision > img {
+    height: 30%;
+    width: 30%;
+ }
+
+ .vision{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    height: 35%;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+ }
+
+ .vision > img {
+    height: 30%;
+    width: 30%;
+ }
+
+ .container_flecha_2{
+    height: 35vh;
+    width: 10vw;
+    overflow: hidden;
+ }
+
+.container_flecha_2 > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+ /*//////////////////////     tercera section           ////////////////*/
+#objetivos{
+    background-color: #ebaf8688;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#objetivos > h1 {
+    text-align: center;
+}
+ .container_objetivos{
+    background-color: #f4d4be;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+.container_objetivos > picture > img{
+    height: 35vw;
+}
+#flecha_izquierda {
+    width: 10vw;
+    height: 20vh;
+    rotate: 90deg;
+}
+
+#flecha_derecha {
+    width: 10vw;
+    height: 20vh;
+    rotate: 270deg;
+}
+.container_cards_objetivos{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.cards_objetivos{
+    height: 60%;
+    width: 80%;
+    background-color: #bf738b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.cards_objetivos > h2 {
+    height: 30%;
+
+    background-color:#7b4c46;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*//////////////////////     Productos           ////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*//////////////////////     emprendedoras          //////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*//////////////////////     footer           ////////////////*/
+footer{
+    width: 100%;
+    overflow: hidden;
+    padding: 0%;
+}
+.ondas{
+    padding: 0%;
+    margin: 0%;
+    width: 100vw;
+    overflow: hidden;
+}
+.ondas > img{
+    width: 100%;
+    height: 20vh;
+}
+
+.footer_information{
+    padding: 0%;
+    margin-top: -2%;
+    background-color:#7b4c46;
+    height: 20vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
 
 
 
@@ -159,7 +400,7 @@
 
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:560px) {
 
     html,body{
         padding: 0%;
@@ -242,14 +483,24 @@
     }
 
 
+    /*///////////////// /////////////////////////////////*/
 
 
 
 
+    /*///////////////// //////////  primera section  ///////////////////////*/
 
+    .container_text{
+        justify-content: center;
+    }
 
     .conteiner_intro{
         overflow: hidden;
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -258,13 +509,20 @@
     }
 
     .information {
-        width: 90vw;
-        padding: 5vh;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }    
     .information > h1 {
+        width: 100%;
         font-size: 30px;
+        color: #bf738b;
+        text-align: center;
     }
     .information >  p {
+
         font-size: 20px;
         width: 90%;      
     }
@@ -281,10 +539,103 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .cards_person{
         width: 75%;
         margin-top: 5%;
+        margin-left: 0px;
+    }
+    .cards_person > div > img {
+        height: 200px;
+        width: 200px;
+    }
+
+
+        /*///////////////// //////////  segunda section  ///////////////////////*/
+
+
+        .container_flecha{
+            display: none;
+        }
+        .container_flecha_2{
+            display: none;
+        }
+        .container_lineamientos{
+            background-repeat: no-repeat;
+            padding-bottom: 5%;
+        }
+    
+        .container_m_v{
+            flex-direction: column;
+            width: 100%;
+            height: 80%;
+        }
+        .mision{
+            width: 80%;
+        }
+        .vision{
+            margin-top: 5%;
+            width: 80%;
+        }
+    
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+
+    .container_nav{
+        padding: 2%;
+    }
+
+
+
+    .conteiner_intro{
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    
+    .conteiner_intro_img > img{
+        height: 0px;
+    }
+
+    .information {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }    
+    .information > h1 {
+        width: 100%;
+        font-size: 30px;
+        color: #bf738b;
+        text-align: center;
+    }
+    .information >  p {
+
+        font-size: 20px;
+        width: 90%;      
+    }
+
+    .cards_person > div > img {
+        height: 230px;
+        width: 230px;
+    }
+
+
+
+
+
+    /*///////////////// //////////  segunda section  ///////////////////////*/
+
+    .container_flecha{
+        display: none;
     }
 }
