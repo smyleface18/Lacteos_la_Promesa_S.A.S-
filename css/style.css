@@ -288,18 +288,23 @@
 .cards_objetivos{
     height: 60%;
     width: 80%;
-    background-color: #bf738b;
+    background-color: #dff3fc;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top:10px;
+    padding: 10px;
 }
 .cards_objetivos > h2 {
-    height: 30%;
-
-    background-color:#7b4c46;
+    height: 50px;
+    width: 50px;
+    background-color:#7b4c46b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 
 }
 
@@ -318,10 +323,20 @@
 
  /*//////////////////////     Productos           ////////////////*/
 
+.swiper {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
 
-
-
-
+.swiper-slide{
+    background-color: #bf738b;
+}
+:root{--swiper-theme-color: black !important}
 
 
 
@@ -380,7 +395,7 @@ footer{
 .footer_information{
     padding: 0%;
     margin-top: -2%;
-    background-color:#7b4c46;
+    background-color:#665a52;
     height: 20vh;
     width: 100%;
     overflow: hidden;
@@ -410,7 +425,7 @@ footer{
  /*//////////////////////     Menu           ////////////////*/
 
 
-    .title_menu {
+    .title_menu.click {
         width: 0px;
         height: 0px;
         overflow:hidden;
@@ -579,6 +594,33 @@ footer{
             margin-top: 5%;
             width: 80%;
         }
+
+
+
+
+
+
+  /*///////////////// //////////  objetivos section  ///////////////////////*/
+
+
+  .container_objetivos  {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .container_cards_objetivos{
+    padding-bottom: 10px;
+  }
+  .cards_objetivos{
+    width: 80vw;
+  }
+
+  .container_flecha_3 {
+    display: none;
+  }
+  .container_objetivos > picture > img {
+    display: none;
+  }
     
 }
 
@@ -638,4 +680,14 @@ footer{
     .container_flecha{
         display: none;
     }
+
+
+
+
+
+      /*///////////////// //////////  objetivos section  ///////////////////////*/
+
+      .container_flecha_3 {
+        display: none;
+      }
 }

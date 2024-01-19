@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Lacteos la Promesa S.A.S</title>
 </head>
 <body>
         <nav class="container_nav">
                 <div id="head_menu">
-                    <h2 id="title_menu" >Lacteos la Promesa S.A.S</h2>
+                    <h2 id="title_menu" class="title_menu" >Lacteos la Promesa S.A.S</h2>
                     <li id="container_icon_menu">
                         <img  id="icon_menu" src="icons/menu.svg" alt="icon menu">
                     </li>  
@@ -21,19 +22,19 @@
                     <img src="img/logo_lacteos-removebg-preview.png" alt="">
                 </li>               
                 <li>
-                    <a href="#lineamientos"><h4>Quienes somos?</h4></a>
+                    <a class="hipervinculo" href=""><h4>Inicio</h4></a>
                 </li>
                 <li>
-                    <a href=""><h4>Quienes somos?</h4></a>
+                    <a class="hipervinculo" href="#lineamientos"><h4>Lineamientos</h4></a>
                 </li>
                 <li>
-                    <a href=""><h4>Quienes somos?</h4></a>
+                    <a class="hipervinculo" href=""><h4>Quienes somos?</h4></a>
                 </li>
                 <li>
-                    <a href=""><h4>Quienes somos?</h4></a>
+                    <a class="hipervinculo" href=""><h4>Quienes somos?</h4></a>
                 </li>
                 <li>
-                    <a href=""><h4>Quienes somos?</h4></a>
+                    <a class="hipervinculo" href=""><h4>Quienes somos?</h4></a>
                 </li>
             </ul>
         </nav>
@@ -82,10 +83,10 @@
         </div>
 
     </section>
-    <div class="ondas_1">
+    <div class="ondas_1" id="lineamientos">
         <img src="img/ondas_invertida.svg" alt="">
     </div>
-    <section class="container_lineamientos" id="lineamientos">
+    <section class="container_lineamientos" >
 
         <div class="container_m_v">
         
@@ -161,6 +162,72 @@
     <div class="ondas_1">
         <img src="img/ondas_invertida.svg" alt="">
     </div>
+
+    <section class="container_Productos">
+              <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+             <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+            </div>
+            <div class="swiper-slide">               
+                 <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+                </div>
+            <div class="swiper-slide">
+                <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+            </div>
+            <div class="swiper-slide">
+                <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+            </div>
+            <div class="swiper-slide">               
+                 <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+                </div>
+            <div class="swiper-slide">
+                <img src="" alt="">
+                <h3>Producto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vel aut eveniet aliquid
+                     voluptatibus accusamus. Modi ducimus illo temporibus eveniet, 
+                    </p>
+            </div>
+    
+        </div>
+             <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+                  <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+  
+
+  
+ 
+  
+        
+    </section>
+
+
     <section class="container_Person">
         
     </section>
@@ -174,6 +241,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/functions.js"></script>
+
 </body>
 </html>
