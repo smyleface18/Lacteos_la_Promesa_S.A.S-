@@ -435,7 +435,12 @@ footer{
         flex-direction: column;
         padding: 0%;  
         margin: 0%;
-        padding-left: 2%;  
+        padding-left: 2%;
+       
+    }
+    .container_nav .click{
+        padding-bottom:100vh ;
+        
     }
 
     .container_options{
@@ -448,7 +453,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 600px;
+        
         width: 115vw;
  
     }
@@ -494,7 +499,9 @@ footer{
 
 
     .container_options.click{
+       
         transform: translateY(0);
+        
     }
 
 
