@@ -308,6 +308,14 @@
 
 
  /*//////////////////////     Productos           ////////////////*/
+ #container_Productos{
+    margin-top: 5%;
+ }
+#container_Productos > h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #665a52;
+}
 
 .ondas_2{
     margin-top: 120px;
@@ -321,49 +329,38 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
 }
+
+:root{--swiper-theme-color: #665a52 !important}
 
 .swiper-slide{
-    background-color: #bf738b;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-:root{--swiper-theme-color: black !important}
+.swiper-slide > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*//////////////////////     emprendedoras          //////////////////*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper-slide > h3 {
+    margin-top: 60%;
+    text-align: center;
+    background-color: #665a52;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+.swiper-slide > p {
+    padding: 10px;
+    margin: 0px;
+}
 
 
    /*//////////////////////     footer           ////////////////*/
@@ -385,13 +382,65 @@ footer{
 
 .footer_information{
     padding: 0%;
-    margin-top: -2%;
+    margin-top: 5%;
     background-color:#665a52;
-    height: 20vh;
+    height: 45vh;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.footer_information > h3 {
+    color: #fff;
+}
+.footer_social{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.footer_social > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_social > div > img {
+    height: 30vh;
+}
+.footer_social > div > a {
+    background-color: #f4d4be;
+    text-decoration: none;
+    color: #665a52;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+} 
+.footer_social > div > a > h3{
+    margin: 0%;
+}
+.footer_social > div > a:hover{
+    background-color:#fff;
+}
+.redes_sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes_sociales > h3{
+    font-size: 25px;
+    color: #fff;
+}
+.redes_sociales > div > a > img {
+    height: 5vh;
+}
+.linea{
+    width: 80vw;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 30px;
+}
 
 
 
@@ -587,11 +636,19 @@ footer{
 
         .container_objetivos{
             width: 80vw;
+            height: 100vh;
         }
         .container_cards_objetivos{
             width: 100%;
         }
 
+        /*////////footer//////////*/
+        .footer_information{
+            height: 60vh;
+        }
+        .footer_social {
+           flex-direction: column;
+        }
 
 
     
