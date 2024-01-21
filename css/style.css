@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300;1,600&family=Roboto+Condensed:wght@300&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,300&family=Open+Sans:ital,wght@0,800;1,300;1,600&family=Roboto+Condensed:wght@300&family=Shizuru&display=swap');
 
 
 * html,body{
     padding: 0%;
     margin: 0%;
     overflow-x: hidden;
-    
+    font-family: 'Josefin Sans', sans-serif;
+
 }
-
-
-
 
 
 
@@ -90,15 +88,29 @@
     justify-content: center;
 }
 
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .information > h1{
+    width: 70%;
+    display: flex;
     font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #665a52;
 }
 
 .information > p{
     padding: 3%;
     font-size: 25px;
 }
-.container_emprendedoras > h1{
+.container_emprendedoras > h3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,47 +174,49 @@
 
 
  /*//////////////////////     Seguda section           ////////////////*/
+ 
 .container_lineamientos{
     width: 100%;
     background-image: url("../img/wallpaper.jpg");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -22%;
-}
-
- .container_m_v{
+    background-repeat: repeat-y;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;
-    padding-top: 20%;
+    margin-top: -22%;
+}
+
+.title_3{
+    font-size: 25px;
+    background-color: #665a52;
+    padding: 10px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+
+ .container_m_v{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+    padding-top: 17%;
  }
 
  .mision{
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
+    background-color:#f4d4be;
     box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
     border-radius: 5px;
-    width: 35%;
-    height: 35%;
- }
- .container_flecha{
-    width: 20vw;
-    overflow: hidden;
+    height: 40%;
+    width: 100%;
  }
 
- .container_flecha > img{
-    width: 100%
- }
+
 
  .mision > img {
     height: 30%;
@@ -210,14 +224,15 @@
  }
 
  .vision{
-    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-    height: 35%;
-    width: 35%;
+    background-color:#f4d4be;
+    height: 40%;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
@@ -228,54 +243,25 @@
     width: 30%;
  }
 
- .container_flecha_2{
-    height: 35vh;
-    width: 10vw;
-    overflow: hidden;
- }
-
-.container_flecha_2 > img{
-    width: 100%;
-    height: 100%;
-}
-
-
- /*//////////////////////     tercera section           ////////////////*/
-#objetivos{
-    background-color: #ebaf8688;
-    width: 100vw;
+ .container_objetivos{
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-}
-#objetivos > h1 {
-    text-align: center;
-}
- .container_objetivos{
-    background-color: #f4d4be;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin-top: 15%;
+    overflow: hidden;
+    background-color:#f4d4be;
+    box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.75);
+    border-radius: 5px;
+ }
+ .container_objetivos > div{
+    display: flex;
+
  }
 
-.container_objetivos > picture > img{
-    height: 35vw;
-}
-#flecha_izquierda {
-    width: 10vw;
-    height: 20vh;
-    rotate: 90deg;
-}
 
-#flecha_derecha {
-    width: 10vw;
-    height: 20vh;
-    rotate: 270deg;
-}
 .container_cards_objetivos{
     height: 40vh;
     width: 30vw;
@@ -288,7 +274,6 @@
 .cards_objetivos{
     height: 60%;
     width: 80%;
-    background-color: #dff3fc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,9 +283,10 @@
     padding: 10px;
 }
 .cards_objetivos > h2 {
+    color: #fff;
     height: 50px;
     width: 50px;
-    background-color:#7b4c46b6;
+    background-color: #665a52;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,6 +308,11 @@
 
 
  /*//////////////////////     Productos           ////////////////*/
+
+.ondas_2{
+    margin-top: 120px;
+    transform: rotateY(180deg);
+}
 
 .swiper {
     width: 90vw;
@@ -538,13 +529,9 @@ footer{
         align-items: center;
     }    
     .information > h1 {
-        width: 100%;
         font-size: 30px;
-        color: #bf738b;
-        text-align: center;
     }
     .information >  p {
-
         font-size: 20px;
         width: 90%;      
     }
@@ -578,14 +565,9 @@ footer{
         /*///////////////// //////////  segunda section  ///////////////////////*/
 
 
-        .container_flecha{
-            display: none;
-        }
-        .container_flecha_2{
-            display: none;
-        }
+
         .container_lineamientos{
-            background-repeat: no-repeat;
+            flex-direction: column;
             padding-bottom: 5%;
         }
     
@@ -603,31 +585,15 @@ footer{
         }
 
 
+        .container_objetivos{
+            width: 80vw;
+        }
+        .container_cards_objetivos{
+            width: 100%;
+        }
 
 
 
-
-  /*///////////////// //////////  objetivos section  ///////////////////////*/
-
-
-  .container_objetivos  {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .container_cards_objetivos{
-    padding-bottom: 10px;
-  }
-  .cards_objetivos{
-    width: 80vw;
-  }
-
-  .container_flecha_3 {
-    display: none;
-  }
-  .container_objetivos > picture > img {
-    display: none;
-  }
     
 }
 
@@ -661,12 +627,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }    
-    .information > h1 {
-        width: 100%;
-        font-size: 30px;
-        color: #bf738b;
-        text-align: center;
-    }
     .information >  p {
 
         font-size: 20px;
@@ -682,19 +642,4 @@ footer{
 
 
 
-    /*///////////////// //////////  segunda section  ///////////////////////*/
-
-    .container_flecha{
-        display: none;
-    }
-
-
-
-
-
-      /*///////////////// //////////  objetivos section  ///////////////////////*/
-
-      .container_flecha_3 {
-        display: none;
-      }
 }
