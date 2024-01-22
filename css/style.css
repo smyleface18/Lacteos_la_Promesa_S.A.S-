@@ -649,6 +649,13 @@ footer{
         .footer_social {
            flex-direction: column;
         }
+        .footer_social > div > img {
+            height: 15vh;
+        }
+        .redes_sociales > h3{
+            font-size: 20px;
+            margin-left: 10px;
+        }
 
 
     
